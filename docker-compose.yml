@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  servidor:
+    container_name: servidor-portafolio
+    working_dir: /app
+    # image: node:12.5.0-alpine
+    image: node
+    restart: always
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./:/app
+    # command: bash -c "npm i && npm run dev"
+    command: ["npm", "run", "dev"]
+
+      # vue:
+    # container_name: front-enpeso
+    # build: ./enpesox-front/.
+    # image: node:12.5.0-alpine
+    # working_dir: /app
+    # restart: always
+    # expose:
+      # - "8080"
+    # volumes:
+      # - ./enpesox-front:/app
+    # command: bash -c "npm install -g http-server && npm i && npm -v && npm run watch && http-server dist"
+    # entrypoint:
+    #   - npm install -g http-server
+    #   - npm install
+    #   - npm run watch
+    #   - http-server dist
