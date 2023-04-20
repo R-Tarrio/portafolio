@@ -8,7 +8,11 @@
             <!-- profile content start -->
             <div class="grow">
                 <span class="text-accent1 text-[24px] font-semibold italic pb-[5px]">Hola Soy</span>
-                <h2 class="lg:text-[60px] only-md:text-[40px] sm:text-[28px] font-bold font-heebo text-heading dark:text-white">{{profile.FIRST_NAME}} {{profile.LAST_NAME}}</h2>
+                <h2 class="lg:text-[60px] only-md:text-[40px] sm:text-[28px] font-bold font-heebo text-heading dark:text-white">
+                    <div>
+                    <p class="fullName">{{profile.FULL_NAME}}</p>
+                    </div>
+                </h2>
                 <h3 class="font-heebo font-normal text-primary dark:text-white"> {{profile.PROFESSION}} </h3>
                 <p class="lg:text-[20px] md:text-[16px] text-paragraph dark:text-slate-200 lg:mt-[18px] md:mt-[15px]">Si lo puedes imaginar, lo puedes programar.</p>
                 <div class="mt-7">
@@ -108,13 +112,14 @@
   
 <script>
     import Menu from "../../src/components/layout/Menu.vue"
-    import Profile from "../../src/utils/Profile"
 
     export default {
         name: "Home",
         data(){
             return {
             }
+        },
+        mounted(){
         },
         components:{
             Menu
@@ -126,3 +131,31 @@
         }
     };
 </script>
+<style>
+
+.fullName{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    /* font-size: 2rem; */
+    margin: 0 auto;
+    /* font-family: "Courier New"; */
+    border-right: 0.15em solid #18bdec;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+    
+</style>

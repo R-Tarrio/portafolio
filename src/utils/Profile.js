@@ -28,6 +28,22 @@ export default class Profile {
             console.log(error);
         }
     }
+
+    setNetworks(networks){
+        if(networks.constructor.name == new Networks().constructor.name){
+            this.NETWORKS = networks;
+        }else{
+            this.NETWORKS = new new Networks();
+        }
+    }
+
+    setName(data){
+        this.FIRST_NAME = data
+    }
+
+    get FULL_NAME(){
+        return `${this.FIRST_NAME} ${this.LAST_NAME}`;
+    }
     
 
 }
