@@ -6,6 +6,7 @@ export default class Profile {
     DESCRIPTION = "";
     PROFESSION = "";
     PHONE = "";
+    AGE = "";
     EMAIL = "";
     ADDRESS = "";
     PROFILE_PICTURE = "../../src/assets/images/profile-image-default.png"

@@ -43,6 +43,7 @@
           PHONE: "+584268925431",
           EMAIL: "rodrigotarrio2@gmail.com",
           ADDRESS: "Venezuela, Estado Bolívar",
+          AGE: 27,
           PROFILE_PICTURE:"../src/assets/images/profile-image-rounded.png",
           NETWORKS:{
               FACEBOOK: "https://www.facebook.com/R.Tarrio",

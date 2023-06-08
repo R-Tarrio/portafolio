@@ -140,8 +140,8 @@
     /* font-size: 2rem; */
     margin: 0 auto;
     /* font-family: "Courier New"; */
-    border-right: 0.15em solid #18bdec;
-    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+    border-right: 0.15em solid #1f2527;
+    animation: typing 0.5s steps(20) 1s 1 normal both, blink 1s steps(1) infinite;
 }
 
 @keyframes typing {
@@ -150,10 +150,14 @@
   }
   to {
     width: 100%;
+    border-right: transparent;
   }
 }
 @keyframes blink {
   50% {
+    border-color: transparent;
+  }
+  to {
     border-color: transparent;
   }
 }

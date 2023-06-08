@@ -4,8 +4,8 @@
         <div class="flex justify-between items-center">
             <div class="logo">
                 <a href="/">
-                  <img class="hidden dark:block" src="../../assets/images/logo-light.png" alt="">
-                  <img class="dark:hidden" src="../../assets/images/logo.png" alt="">
+                  <!-- <img class="hidden dark:block" src="../../assets/images/logo-light.png" alt=""> -->
+                  <!-- <img class="dark:hidden" src="../../assets/images/logo.png" alt=""> -->
                 </a>
             </div>
         </div>
